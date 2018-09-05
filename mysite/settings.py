@@ -79,10 +79,10 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'd6qt9as2pn84e2',
-        'USER': 'obqermjdkovxwa',
-        'PASSWORD': 'eca140cabec8a4f03745eaeaeccff29800084ea80310ad70a7b2a30910ed6142',
-        'HOST': 'postgres://obqermjdkovxwa:eca140cabec8a4f03745eaeaeccff29800084ea80310ad70a7b2a30910ed6142@ec2-54-227-244-12.compute-1.amazonaws.com:5432/d6qt9as2pn84e2',
+        'NAME': 'd9flrk9rroklvj',
+        'USER': 'pbwrbgrnfhrapj',
+        'PASSWORD': 'aba3548e06169342d4888c3116c231a311f81e255af4c255a90996c5cced150f',
+        'HOST': 'postgres://pbwrbgrnfhrapj:aba3548e06169342d4888c3116c231a311f81e255af4c255a90996c5cced150f@ec2-184-72-247-70.compute-1.amazonaws.com:5432/d9flrk9rroklvj',
         'PORT': '5432',
     }
 }
@@ -147,13 +147,6 @@ DATABASES['default'] = dj_database_url.config()
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
-
-EMAIL_HOST = 'smtp.mailtrap.io'
-EMAIL_HOST_USER = 'YOUR HOST USER'
-EMAIL_HOST_PASSWORD = 'YOUR HOST PASSWORD'
-EMAIL_PORT = 2525
-#EMAIL_USE_TLS = True
-
 
 try:
     from .local_settings import *
