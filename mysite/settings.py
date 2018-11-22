@@ -157,4 +157,4 @@ EMAIL_PORT = 2525
 try:
     from .local_settings import *
 except ImportError:
-    pass
+    print('Import Error')
